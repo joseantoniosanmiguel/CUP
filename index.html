@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINKS FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Title and Logo -->
+    <link rel= "icon" type = "Image/png" href = "Images/lg.png">
+    <title >CITY UNIVERSITY OF PASAY</title>
+
+</head>
+
+<body onload="slider()">
+
+        <div class="banner">
+            <img src="Images/5.jpg" id="slideImg">
+        </div>
+   
+        <div class="overlay">    
+            <section class="header">
+
+                <nav>
+                    <img class="Picture" src="Images/nobg logo.png"> &nbsp&nbsp&nbsp
+
+                    <label class ="logo">CITY UNIVERSITY OF PASAY</label>    
+                    <div class="navigation">
+                        <ul>    
+                            <li><a href="index.html" class="Home">Home</a></li>
+                            <li><a href="about.html" class="About">Mission & Vision</a></li>
+                            <li><a href="login.html" class="LogIn"></i>Signup/Login</a></li>
+                        </ul>
+                    </div>    
+                </nav>
+        
+                <div class="content">
+
+                    <h1 > City University of Pasay (CUP)</h1>
+                
+                    <p> (Filipino: Pamantasan ng Lungsod ng Pasay), commonly abbreviated 
+                        as CUPasay, <br> is a city-controlled, public university in Pasadeña St.,
+                        F.B. Harrison, Pasay. Its major purpose is to provide education to
+                        the less-privileged yet deserving students of the city and to some 
+                        others that meet admission requirements set forth by the Board of 
+                        Regents.</p>
+                    
+                    <a href="https://www.facebook.com/City-University-of-Pasay-Pamantasan-Ng-Lungsod-Ng-Pasay-109703424109308/?ref=page_internal" target="_blank">
+                        <button class="Buttons" type="button">Visit us to Know More</button>
+                    </a>
+                </div>
+            </section>
+
+            <!-- COURSES -->
+
+            <section class="Courses">
+
+                <h1 class="Offered">Courses Offered</h1>
+                
+                <div class="Course-row">
+
+                    <div class="Choices">
+                        <h1 class="CUPCOURSES">Bachelor of Science in Business Management (BSBA)</h1><br>
+                        <p class="Parangraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Similique laudantium nemo odit voluptatum sit sint minima cupiditate, 
+                            accusantium magnam eveniet ad porro omnis hic incidunt soluta voluptatibus 
+                            officia beatae ipsam!</p>
+                    </div>
+
+                    <div class="Choices">
+                        <h1 class="CUPCOURSES">Associate in Computer Technology</h1><br>
+                        <p class="Parangraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ipsam voluptatem fuga labore similique et facere, natus doloribus hic numquam 
+                        saepe esse dolorem corporis quis eveniet consequatur nihil aspernatur 
+                        voluptatibus assumenda?</p>
+                    </div>
+
+                    <div class="Choices">
+                        <h1 class="CUPCOURSES">Education</h1><br>
+                        <p class="Parangraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quis explicabo in nesciunt minus ipsum sunt reprehenderit hic ducimus earum, 
+                        modi asperiores! Quas incidunt nemo nesciunt optio officia aperiam quidem ipsa.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="Course-row1">
+
+                    <div class="Choices">
+                        <h1 class="CUPCOURSES">Office Administ</h1><br>
+                        <p class="Parangraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Velit laudantium doloribus error! Officiis eligendi, voluptates beatae ex 
+                        recusandae dolore nobis iusto unde mollitia possimus repudiandae tempore deserunt. 
+                        Atque, nulla amet.</p>
+                    </div>
+
+                    <div class="Choices">
+                        <h1 class="CUPCOURSES">Political Science</h1><br>
+                        <p class="Parangraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Sunt in adipisci, corrupti culpa labore aliquam eligendi. Magni in natus vitae 
+                        quia nostrum itaque illo doloribus. Nam repudiandae eius tenetur facere!</p>
+                    </div>
+
+                    <div class="Choices">
+                        <h1 class="CUPCOURSES">College of Nursing</h1><br>
+                        <p class="Parangraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Voluptates ipsum explicabo deserunt vitae. Doloribus rem at, commodi est officia eum, 
+                        ratione voluptate ipsa assumenda, veniam explicabo quibusdam nesciunt accusantium 
+                        deleniti?</p>
+                    </div>
+
+                </div>
+                
+            </section>
+
+        </div>
+
+        <script>
+            var slideImg = document.getElementById("slideImg");
+        
+            var Images = new Array(
+                "Images/1.jpg",
+                "Images/2.jpg",
+                "Images/3.jpg"
+            );
+        
+            var len = Images.length;
+            var i = 0;
+        
+            function slider() {
+                if(i > len-1){
+                    i = 0;
+                }
+                slideImg.src = Images[i];
+                i++;
+                setTimeout('slider()',3000);
+            }
+        </script>
+    
+</body>
+</html>

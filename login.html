@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINKS FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/log.css">
+
+    <!-- Title and Logo -->
+    <link rel= "icon" type = "Image/png" href = "Images/lg.png">
+    <title >CITY UNIVERSITY OF PASAY</title>
+</head>
+
+    <body onload="slider()">
+
+        <div class="banner">
+            <img src="Images/5.jpg" id="slideImg">
+        </div>
+   
+        <div class="overlay">            
+            <section class="header">
+                <nav>
+                    <img class="Picture" src="Images/nobg logo.png"> &nbsp&nbsp&nbsp
+
+                    <label class ="logo">CITY UNIVERSITY OF PASAY</label>    
+                    <div class="navigation">
+                        <ul>    
+                            <li><a href="index.html" class="Home">Home</a></li>
+                            <li><a href="about.html" class="About">Mission & Vision</a></li>
+                            <li><a href="login.html" class="LogIn"></i>Signup/Login</a></li>
+                        </ul>
+                    </div>    
+                </nav>
+        
+                <div  class="container">
+
+                    <h1> LOGIN SYSTEM </h1>
+        
+                    <div>
+                        <form method="login-form">
+        
+                            <div class="userpass">
+                                <input type="text" required> 
+                                <label> USERNAME </label>
+                            </div>
+        
+                            <div class="userpass">
+        
+                                <input id="myPassword" type="password" required >  
+                                <label> PASSWORD </label>      
+                            </div>
+        
+                                <div class="forget"> Forget Password? </div>
+                            
+                                <div class="spacinglog">
+                                    <input type="submit" value="Login">    
+                                </div>
+        
+                        </form>
+                    </div>
+            </div>   
+    </div>
+
+    </section>
+        
+    <script>
+
+    var slideImg = document.getElementById("slideImg");
+
+    var Images = new Array(
+        "Images/1.jpg",
+        "Images/2.jpg",
+        "Images/3.jpg"
+    );
+
+    var len = Images.length;
+    var i = 0;
+
+    function slider() {
+        if(i > len-1){
+            i = 0;
+        }
+        slideImg.src = Images[i];
+        i++;
+        setTimeout('slider()',3000);
+    }
+
+    </script>
+    
+
+</body>
+</html>
